@@ -1,0 +1,16 @@
+title: targilim
+description: להכניס את הקודים מהקורס
+template:
+  repo: targilim-template
+  name: targilim
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
